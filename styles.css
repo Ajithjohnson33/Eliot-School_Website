@@ -231,3 +231,36 @@ footer {
 .heading {
     float: left;
 }
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 5px; /* Adjust spacing for smaller screens */
+    }
+
+    div.mycontainer,
+    div.mycontainer1,
+    .four-columns,
+    .gallery,
+    .background-section,
+    footer {
+        margin: 10px; /* Adjust margins for smaller screens */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack navigation links vertically on small screens */
+        align-items: center; /* Center align navigation links */
+    }
+
+    .navbar-brand img {
+        width: 100%; /* Make the logo fill the width of its container */
+        max-width: 200px; /* Limit the logo's maximum width */
+    }
+
+    .messageSection,
+    .right,
+    .four-columns .column {
+        width: 100%; /* Make these sections take full width on small screens */
+        box-sizing: border-box;
+    }
+}
