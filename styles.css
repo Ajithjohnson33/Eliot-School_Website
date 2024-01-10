@@ -5,7 +5,7 @@ body {
 
 .menu-container {
     background-color: #666699;
-    color: aliceblue;
+    color: #26004d;
 }
 
 .menu {
@@ -94,7 +94,7 @@ div.right {
     background-color: blue;
     float: left;
     margin: 10px;
-
+    
 }
 
 .four-columns.h1 {
@@ -115,7 +115,6 @@ div.right {
 
 .button {
 
-
     color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -129,8 +128,6 @@ div.right {
     width: 100%;
     overflow: auto;
     width: 50%;
-
-
 }
 
 .gallery {
@@ -142,7 +139,6 @@ div.right {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5px;
-    /* Optional: Add gap between images */
 }
 
 
@@ -153,13 +149,13 @@ div.right {
     float: left;
     margin: 20px;
     width: 100%;
-
+    
 
 }
 
 .subsection {
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 5px;
     width: 250px;
     border: #dddddd;
     border-radius: 8px;
@@ -232,10 +228,20 @@ footer {
     float: left;
 }
 
-/* Media Query for Responsive Design */
+
+.flex-container {
+    display: flex;
+    align-items: center; 
+}
+
+.flex-container img {
+    margin-right: 10px; 
+}
+
+
 @media only screen and (max-width: 600px) {
     body {
-        padding: 5px; /* Adjust spacing for smaller screens */
+        padding: 5px; 
     }
 
     div.mycontainer,
@@ -244,23 +250,23 @@ footer {
     .gallery,
     .background-section,
     footer {
-        margin: 10px; /* Adjust margins for smaller screens */
+        margin: 10px; 
     }
 
     .navbar-nav {
-        flex-direction: column; /* Stack navigation links vertically on small screens */
-        align-items: center; /* Center align navigation links */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .navbar-brand img {
-        width: 100%; /* Make the logo fill the width of its container */
-        max-width: 200px; /* Limit the logo's maximum width */
+        width: 100%;
+        max-width: 200px; 
     }
 
     .messageSection,
     .right,
     .four-columns .column {
-        width: 100%; /* Make these sections take full width on small screens */
+        width: 100%; 
         box-sizing: border-box;
     }
 }
